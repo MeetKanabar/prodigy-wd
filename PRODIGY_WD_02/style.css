@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+.stopwatch {
+    max-width: 300px;
+    text-align: center;
+}
+
+.circle {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(rgb(85, 255, 85) 0%, #333 0%);
+}
+
+#display {
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+}
+
+.controls button {
+    font-size: 1em;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+.controls button:hover {
+    background-color: #777;
+}
+
+#laps {
+    margin-top: 20px;
+}
+
+.lap-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+.lap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.lap span {
+    color: #aaa;
+}
+
+#StartPauseBtn{
+    background-color: rgb(38, 156, 38);
+}
+
+#ResetBtn{
+    background-color: red;
+}
+
+#LapBtn{
+    background-color: blue;
+}
